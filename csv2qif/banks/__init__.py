@@ -1,10 +1,11 @@
 import csv
-from . import ing, millennium
+from . import ing, millennium, mbank
 
-supported = ['millennium', 'ing']
+supported = ['millennium', 'ing', 'mbank']
 
 csv.register_dialect('ing', ing.dialect)
 csv.register_dialect('millennium', millennium.dialect)
+csv.register_dialect('mbank', mbank.dialect)
 
 
 class Importer(object):
@@ -24,6 +25,7 @@ def create_importer(bank) -> Importer:
     result = {
         'millennium': millennium.row_converter,
         'ing': ing.row_converter,
+        'mbank': mbank.row_converter,
     }[bank]
 
     return Importer(result)
