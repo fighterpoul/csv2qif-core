@@ -1,5 +1,5 @@
 from datetime import datetime
-import csv2qif
+from csv2qif.core import Transaction
 import os
 
 
@@ -52,7 +52,7 @@ def map_transactions(transactions):
     return [__map_transaction(t) for t in transactions]
 
 
-def __map_transaction(transaction: csv2qif.Transaction):
+def __map_transaction(transaction: Transaction):
     return QifEntity(
         date=transaction.date,
         price=transaction.price,

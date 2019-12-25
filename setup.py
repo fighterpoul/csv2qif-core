@@ -29,6 +29,7 @@ setup(
     entry_points={
         'console_scripts': [
             'csv2qif = csv2qif:main',
+            'csv2qif-plugins = csv2qif:plugins',
         ],
     },
     python_requires='>3.5',
