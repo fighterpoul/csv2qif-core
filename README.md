@@ -41,9 +41,9 @@ ing, mbank, millennium
 ```
 
 ### Where can I find those plugins?
-1. [ING](https://github.com/fighterpoul/csv2qif-ing])
-2. [mBank](https://github.com/fighterpoul/csv2qif-mbank])
-3. [Millennium](https://github.com/fighterpoul/csv2qif-millennium])
+1. [ING](https://github.com/fighterpoul/csv2qif-ing)
+2. [mBank](https://github.com/fighterpoul/csv2qif-mbank)
+3. [Millennium](https://github.com/fighterpoul/csv2qif-millennium)
 
 ### How can I write my own plugin? I can't see my bank on the list above.
 It's really simple - plugin is a single Python file with the logic. I propose you to check one of the available plugins, adapt the file with the plugin's code to your needs, install your new plugin and run it.
