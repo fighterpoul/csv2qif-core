@@ -1,0 +1,11 @@
+name: csv2qif
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pip=20.2.3=py_0
+  - python=3.7.8=h6f2ec95_1_cpython
+  - pip:
+    - chardet==3.0.4
+    - click==7.0
+
